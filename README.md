@@ -1,4 +1,4 @@
-# educational-practice
+# 6th Block
 
 **Author** : Itigechev Dmitrii
 
