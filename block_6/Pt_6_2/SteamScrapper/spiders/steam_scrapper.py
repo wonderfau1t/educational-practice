@@ -35,6 +35,6 @@ class SteamSpider(scrapy.Spider):
 
         yield {
             'appName': response.css('#appHubAppName::text').get(),
-            'link': response.url,
+            'link': response.url.split('/?')[0],
             'tags': list(map(str.strip, response.css('a.app_tag::text').getall()))
         }
